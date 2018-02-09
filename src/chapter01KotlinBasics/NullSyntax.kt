@@ -1,4 +1,4 @@
-package chapter01
+package chapter01KotlinBasics
 
 fun main(args: Array<String>) {
     println(" Need to declare ? if a variable need to assign null")
