@@ -6,6 +6,8 @@ fun main(args: Array<String>) {
     println("This class is sample for Control flow in Kotlin")
     nameCheck()
     singleLineControlFlow("Avinash Pandey")
+    isString("Avinash")
+    isString(1234)
 
 }
 
@@ -18,7 +20,15 @@ fun nameCheck() {
     }
 }
 
-fun singleLineControlFlow(name :String) {
+fun singleLineControlFlow(name: String) {
     var isStartWith = if (myName == name) true else false
     println("The given name is $isStartWith")
+}
+
+fun isString(any: Any) {
+    if (any is String) {
+        println("$any is String")
+    } else {
+        println("$any is other than String")
+    }
 }
