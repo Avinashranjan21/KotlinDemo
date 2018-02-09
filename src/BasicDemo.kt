@@ -1,3 +1,6 @@
+import chapter02OopsKotlin.Singelton
+import chapter02OopsKotlin.interfaces.MyStudent
+
 /**
  * Created by avinash.ranjan on 26/09/17.
  */
@@ -10,6 +13,18 @@ fun main(args: Array<String>) {
     println("The value of addition of two number with single line function is ${sum(4, 4)}")
     println(printSum(5,10))
     println(printSumVoid(5,10))
+
+//  Sample code for Singleton check
+    Singelton.doSomething()
+    Singelton.doSomething()
+    Singelton.doSomething()
+    Singelton.doSomething()
+    Singelton.doSomething()
+    Singelton.doSomething()
+    Singelton.doSomething()
+
+    println("MyStudent name is ${MyStudent().getName()}")
+
 }
 
 
