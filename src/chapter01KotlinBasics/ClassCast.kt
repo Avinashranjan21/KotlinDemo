@@ -17,5 +17,4 @@ fun isString(any: Any) {
 
 fun smartCast(any: Any){
     if (any is String) println("$any string size is ${any.length}") else println("Any is of other type")
-
 }
